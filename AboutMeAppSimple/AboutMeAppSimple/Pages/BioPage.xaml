@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AboutMeAppSimple.Pages.BioPage"
+             BackgroundColor="White"
+             Title="Bio">
+    <ContentPage.Content>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         HeightRequest="100"
+                         Spacing="10"
+                         Margin="10,10,10,0">
+                    <Image Source="https://dev-squared.com/wp-content/uploads/2018/02/13266355.png"/>
+
+                    <StackLayout>
+                        <Label Text="John Kuefler"
+                           TextColor="Blue"
+                           FontSize="24"/>
+                        <Label Text="Software Architect" 
+                           TextColor="Black"
+                           FontAttributes="Italic"
+                           FontSize="18"/>
+                        <Label Text="Pittsburg, KS" 
+                           TextColor="Black"
+                           FontAttributes="Italic"
+                           FontSize="18"/>
+                    </StackLayout>
+                </StackLayout>
+
+            <ScrollView>
+
+                <Label TextColor="Black"
+                   Margin="20,20,20,0"
+                   FontSize="18"
+                   Text="John is a developer, professor, and problem solver. Starting at a young age, John explored programming as a method to solve problems. John started out as a website developer, but quickly moved toward computer science and programming geared toward engineering solutions. Having spent several years as the lead software architect for a programming team, John gained in depth experience creating software solutions from the ground up. Add that to years of experience in the software consulting business, and a current position as a university professor, and John has seen it all. John has developed back end applications and infrastructure designed to service large user bases, mobile applications, bots, and a myriad of other solutions, with an emphasis on stability. As someone with a passion for engineering solutions, John leads the architecture and solution design of DevSquared."/>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

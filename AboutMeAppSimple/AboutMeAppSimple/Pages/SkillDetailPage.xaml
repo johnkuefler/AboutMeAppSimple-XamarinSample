@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AboutMeAppSimple.Pages.SkillDetailPage"
+             Title="Skill Detail"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout Padding="40"
+                     Spacing="5">
+            <Label Text="Skill" 
+                   Margin="0,10,0,0"
+                   FontAttributes="Bold"/>
+            <Label x:Name="NameLabel" />
+
+            <Label Text="Short Description" 
+                   Margin="0,10,0,0"
+                   FontAttributes="Bold"/>
+            <Label x:Name="ShortDescriptionLabel"/>
+
+            <Label Text="MoreInfo" 
+                   Margin="0,10,0,0"
+                   FontAttributes="Bold"/>
+            <Label x:Name="MoreInfoLabel"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

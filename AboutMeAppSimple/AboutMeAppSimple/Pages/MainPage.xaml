@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AboutMeAppSimple"
+             x:Class="AboutMeAppSimple.MainPage"
+             BackgroundColor="White">
+
+    <StackLayout
+         Padding="10"
+         Spacing="10">
+
+    	<Label Text="About Me" 
+           HorizontalOptions="Center"
+    	   FontSize="40"
+    	   FontAttributes="Bold"
+    	   TextColor="Black"/>
+
+        <StackLayout BackgroundColor="Blue"
+                     Orientation="Horizontal">
+            <Image Source="user.png"
+                   WidthRequest="100"/>
+            <Label Text="My Bio"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   FontSize="40"
+                   VerticalOptions="Center"/>
+
+            <StackLayout.GestureRecognizers>
+                 <TapGestureRecognizer Tapped="Bio_Tapped"/>
+            </StackLayout.GestureRecognizers>
+        </StackLayout>
+
+        <StackLayout BackgroundColor="LightGreen"
+                     Orientation="Horizontal"
+                     HeightRequest="100">
+            <Image Source="code.png"/>
+            <Label Text="My Skills"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   FontSize="40"
+                   VerticalOptions="Center"/>
+
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Skills_Tapped"/>
+            </StackLayout.GestureRecognizers>
+
+        </StackLayout>
+
+        <StackLayout BackgroundColor="Magenta"
+                     Orientation="Horizontal"
+                     HeightRequest="100">
+            <Image Source="contact.png"/>
+            <Label Text="Contact Me"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   FontSize="40"
+                   VerticalOptions="Center"/>
+
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Contact_Tapped"/>
+            </StackLayout.GestureRecognizers>
+        </StackLayout>
+
+        <Label VerticalOptions="EndAndExpand"
+               HorizontalOptions="Center"
+               Text="An app by John Kuefler"
+               TextColor="DarkGray" />
+    </StackLayout>
+
+</ContentPage>
